@@ -6,131 +6,89 @@
     "work": "Work Experience"
   },
   "basics": {
-    "email": "eyosiasbitsu@gmail.com",
-    "phone": "",
+    "email": "fitsumabyu914@gmail.com",
+    "phone": "+251960372794",
     "name": "Fetsum Abyu",
     "location": {
-      "address": "Spring, Texas"
+      "address": "Addis Ababa, Ethiopia"
     },
     "website": "fitsum.com"
   },
   "work": [
     {
-      "company": "Research Improving People's Lives",
-      "position": "Senior Front-end Developer",
-      "location": "Spring, Texas",
-      "startDate": "Feb 2023",
+      "company": "Africa to Silicon Valley",
+      "position": "Project Lead",
+      "location": "Addis Ababa, Ethiopia",
+      "startDate": "Feb 2024",
       "endDate": "Present",
       "highlights": [
-        "Integrated Rec Engine API V2 to improve page load speed and performance",
-        "Contributed to developing the Wisconsin Career Accelerator",
-        "Created documentation on frontend best practices and standardization for faster onboarding and improved development efficiency"
+        "Led the development and implementation of two types of chatbots utilizing the OpenAI API.",
+        "Implemented personal listing assistant chatbot for product listings.",
+        "Developed product recommendation chatbot using embeddings for tailored suggestions."
       ]
     },
     {
-      "company": "Xepelin",
-      "position": "Front-end Developer",
-      "location": "Spring, Texas",
-      "startDate": "Oct 2021",
-      "endDate": "Feb 2023",
+      "company": "Eskalate",
+      "position": "Software Engineering Intern",
+      "location": "Accra, Ghana",
+      "startDate": "Oct 2023",
+      "endDate": "Feb 2024",
       "highlights": [
-        "Built a new onboarding flow, improving self-enrolled users by 33%",
-        "Developed high business impact components, such as the Credit Line widget and a scalable Navbar",
-        "Pioneered the implementation of Typescript and Unit testing, improving overall application trust"
+        "Led the EasyListing project, collaborating closely with product & UI/UX teams.",
+        "Member of the mobile team, contributing to the project using Flutter, Jira, and Clean architecture."
       ]
     },
     {
-      "company": "alacartadigital",
-      "position": "Full Stack Developer",
-      "location": "Spring, Texas",
-      "startDate": "Apr 2021",
-      "endDate": "Sep 2022",
+      "company": "Africa to Silicon Valley",
+      "position": "Head of Education",
+      "location": "Addis Ababa, Ethiopia",
+      "startDate": "Aug 2022",
+      "endDate": "Oct 2023",
       "highlights": [
-        "Implemented features such as yearly subscriptions and multiple restaurants per user, increasing company revenue by 40%",
-        "Optimized Lighthouse metrics by 98, achieving a smoother user experience and significant SEO improvements",
-        "Responsible for maintaining and deploying the platform using Next.js, Redux, and Firebase as the primary technology stack"
+        "Delivered lectures on Data Structures and Algorithms & Competitive programming using Python.",
+        "Led a team of 10 backend developers focusing on educational projects.",
+        "My students secured internships at Bloomberg and Goldman Sachs."
       ]
-    },
-    {
-      "position": "Front-end Developer",
-      "startDate": "Ene 2019",
-      "endDate": "Dec 2020",
-      "highlights": [
-        "In charge of improving the company website and maintaining the design system",
-        "Optimized the app for maximum speed and scalability",
-        "Created features to enhance the user experience"
-      ],
-      "company": "PETUCA",
-      "location": "Ciudad Bolívar, Venezuela"
     }
   ],
   "skills": [
     {
-      "level": "",
-      "keywords": [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "TypeScript",
-        "React",
-        "Next.js",
-        "Redux"
-      ],
-      "name": "Frontend"
+      "keywords": ["Node.js", "React", "MongoDB", "OpenAI API", "Flutter", "Python", "SQL", "Firebase"],
+      "name": "Technical Skills"
     },
     {
-      "keywords": ["Node.js", "Express.js", "Cloud Functions"],
-      "name": "Backend"
-    },
-    {
-      "keywords": ["PostgreSQL", "MongoDB", "Firebase"],
-      "name": "Databases"
-    },
-    {
-      "keywords": ["Tailwind CSS", "Material UI", "Bootstrap"],
-      "name": "CSS frameworks"
-    },
-    {
-      "keywords": ["Jest", "Cypress"],
-      "name": "Testing"
-    },
-    {
-      "keywords": ["Git", "Figma", "Postman"],
-      "name": "Other"
+      "keywords": ["Teamwork", "Leadership", "Quick Execution", "Strategy", "Writing", "Communication skills", "Collaboration"],
+      "name": "Soft Skills"
     }
   ],
   "projects": [
     {
-      "description": "Online restaurant menu platform with QR code integration.",
-      "url": "https://issueless.vercel.app/",
-      "keywords": ["React", "Next.js", "Material UI", "Firebase", "Stripe"],
-      "name": "alacartadigital"
+      "name": "ATRONS",
+      "projectUrl": "https://atrons.app/",
+      "repoUrl":  "https://github.com/RealEskalate/digital-library.git",
+      "imgPath": "projectMedia/atrons.png",
+      "imgAlt": "ATRONS app interface",
+      "summary": "Educational platform designed to enhance learning experiences for students with faster loading times and improved API performance.",
+      "keyFeatures": [
+        "Team Leadership",
+        "Enhanced User Experience",
+        "Award-Winning Performance"
+      ],
+      "technologies": ["Node.js", "MongoDB", "Express"]
     },
     {
-      "description": "JAMStack Issue Tracker project inspired on GitHub issues.",
-      "url": "https://issueless.vercel.app/",
-      "keywords": ["React", "Next.js", "PostgreSQL", "Prisma", "Material UI"],
-      "name": "Issueless"
-    },
-    {
-      "keywords": ["Tailwind CSS", "TypeScript", "React", "Next.js"],
-      "name": "Easybank",
-      "description": "Fully responsive SAAS product landing page designed with Tailwind CSS.",
-      "url": "https://easybank-web.vercel.app/"
-    },
-    {
-      "keywords": ["React", "Next.js", "MongoDB", "Material UI", "SWR"],
-      "name": "A-Note",
-      "description": "A simple, fast and intuitive note-taking app built with NextJS JAMStack solution.",
-      "url": "https://a-note.vercel.app/"
-    }
-  ],
-  "awards": [
-    {
-      "title": "",
-      "date": "",
-      "awarder": "",
-      "summary": ""
+      "name": "Bazar",
+      "projectUrl": "https://bazar-teal.vercel.app/",
+      "repoUrl": "https://github.com/bazar-team",
+      "imgPath": "projectMedia/bazar.png",
+      "imgAlt": "Bazar website preview",
+      "summary": "Comprehensive marketplace with personalized product recommendations and listing assistance using AI.",
+      "keyFeatures": [
+        "AI-driven Chatbots",
+        "Personal Listing Assistance",
+        "Product Recommendation Systems"
+      ],
+      "technologies": ["Node.js", "MongoDB", "OpenAI API", "React"]
     }
   ],
   "sections": [

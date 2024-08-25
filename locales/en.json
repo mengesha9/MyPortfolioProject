@@ -3,7 +3,7 @@
     "title": "Fetsum Abyu | Software Engineer",
     "description": "Fetsum Abyu is a motivated and inquisitive Software Engineer with a passion for software development and problem-solving. Actively seeking job opportunities at top tech companies to further enhance skills and contribute to innovative projects and find solution to real world problems.",
     "url": "https://www.kelvinsanchez15.com/",
-    "previewImage": "https://user-images.githubusercontent.com/4708484/93688063-050a8980-fa91-11ea-89ca-3530a9038393.png"
+    "previewImage": "/resume/profile.png"
   },
   "heroData": {
     "greetings": "HELLO, ",
@@ -16,10 +16,10 @@
   "aboutData": {
     "aboutTitle": "About me",
     "aboutItems": [
-      "I'm a front-end developer based in Spring, Texas.",
-      "I like to design and build beautiful and functional websites and web applications, taking special care to produce clear and understandable code.",
+      "I'm a software engineer based in Addis Ababa, Ethiopia.",
+      "I'm a dedicated Software Engineer with experience in leading projects and teaching at Africa to Silicon Valley. I've helped students get internships at companies like Goldman Sachs and Bloomberg. Skilled in building chatbots and improving backend systems, I solve real problems and make systems work better. From a small village in Ethiopia, I've overcome many challenges to get here. Now, I'm looking for an opportunity at Goldman Sachs to show my skills through an interview.",
       "I love teamwork and good communication, always open to feedback and willing to learn new things.",
-      "In my free time I like to play the guitar, read a good book or play videogames."
+      "In my free time I like to play soccer, read a good book or play videogames."
     ],
     "resumeTitle": "Resumé",
     "resumeParagraph": "You can check my resumé in the link below.",
@@ -31,69 +31,32 @@
     "portfolioTitle": "Portfolio",
     "projects": [
       {
-        "name": "alacartadigital",
-        "projectUrl": "https://www.alacartadigital.es/",
-        "repoUrl": "https://github.com/alacartadigital-team",
-        "imgPath": "projectMedia/alacartadigital.png",
-        "imgAlt": "alacartadigital site mocked device preview",
-        "summary": "Online restaurant menu platform with QR code integration.",
+        "name": "ATRONS",
+        "projectUrl": "https://atrons.app/",
+        "repoUrl":  "https://github.com/RealEskalate/digital-library.git",
+        "imgPath": "projectMedia/atrons.png",
+        "imgAlt": "ATRONS app interface",
+        "summary": "Educational platform designed to enhance learning experiences for students with faster loading times and improved API performance.",
         "keyFeatures": [
-          "User-friendly dashboard",
-          "Live preview",
-          "Brand customization",
-          "Paid subscriptions"
+          "Team Leadership",
+          "Enhanced User Experience",
+          "Award-Winning Performance"
         ],
-        "technologies": ["React", "NextJS", "Firebase", "Material-UI", "Stripe"]
+        "technologies": ["Node.js", "MongoDB", "Express"]
       },
       {
-        "name": "Issueless",
-        "projectUrl": "https://issueless.vercel.app",
-        "repoUrl": "https://github.com/kelvinsanchez15/issueless",
-        "imgPath": "projectMedia/issueless.png",
-        "imgAlt": "Issueless preview",
-        "summary": "JAMStack Issue Tracker project inspired on GitHub issues.",
+        "name": "Bazar",
+        "projectUrl": "https://bazar-teal.vercel.app/",
+        "repoUrl": "https://github.com/bazar-team",
+        "imgPath": "projectMedia/bazar.png",
+        "imgAlt": "Bazar website preview",
+        "summary": "Comprehensive marketplace with personalized product recommendations and listing assistance using AI.",
         "keyFeatures": [
-          "Hybrid static & server rendering",
-          "OAuth sign-in services",
-          "Markdown support",
-          "Custom MUI theme"
+          "AI-driven Chatbots",
+          "Personal Listing Assistance",
+          "Product Recommendation Systems"
         ],
-        "technologies": [
-          "React",
-          "NextJS",
-          "PostgreSQL",
-          "Prisma",
-          "Material-UI"
-        ]
-      },
-      {
-        "name": "Easybank",
-        "projectUrl": "https://easybank-web.vercel.app/",
-        "repoUrl": "https://github.com/kelvinsanchez15/easybank-landing-page",
-        "imgPath": "projectMedia/easybank.png",
-        "imgAlt": "Easybank website preview",
-        "summary": "Fully responsive SAAS product landing page designed with Tailwind CSS.",
-        "keyFeatures": [
-          "Pixel perfect design",
-          "Absolute positioning",
-          "Custom classes"
-        ],
-        "technologies": ["Tailwind", "TypeScript", "React", "NextJS"]
-      },
-      {
-        "name": "BombaiMTY",
-        "projectUrl": "https://bombai-mty-menu.vercel.app/",
-        "repoUrl": "https://github.com/kelvinsanchez15/bombai-menu",
-        "imgPath": "projectMedia/bombai-mty.png",
-        "imgAlt": "BombaiMTY website preview",
-        "summary": "Fast food sales portal with WhatsApp checkout.",
-        "keyFeatures": [
-          "Product filter",
-          "Shopping cart",
-          "Cover photo",
-          "Google Sheets integration"
-        ],
-        "technologies": ["Chakra UI", "TypeScript", "React", "NextJS"]
+        "technologies": ["Node.js", "MongoDB", "OpenAI API", "React"]
       }
     ]
   },
