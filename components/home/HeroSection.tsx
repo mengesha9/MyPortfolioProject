@@ -22,7 +22,7 @@ export default function Hero({ heroData: t }: { heroData: HeroData }) {
           flexDirection: 'column',
           justifyContent: 'center',
           backgroundImage: {
-            lg: `url('/hero-graphic.svg')`,
+            lg: `url('/resume/profile.png')`,
           },
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'right -2rem bottom',
