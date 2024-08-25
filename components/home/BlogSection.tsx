@@ -31,7 +31,7 @@ export default function Blog({ blogData: t }: { blogData: BlogData }) {
     >
       <Container>
         <Typography gutterBottom align="center" component="h2" variant="h3">
-          BLOG
+          Testimonials
         </Typography>
 
         <ShortCenteredDivider sx={{ mb: 4 }} />
