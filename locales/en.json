@@ -47,7 +47,7 @@
       {
         "name": "Bazar",
         "projectUrl": "https://bazar-teal.vercel.app/",
-        "repoUrl": "https://github.com/bazar-team",
+        "repoUrl": "https://github.com/A2SV/Bazar",
         "imgPath": "projectMedia/bazar.png",
         "imgAlt": "Bazar website preview",
         "summary": "Comprehensive marketplace with personalized product recommendations and listing assistance using AI.",
