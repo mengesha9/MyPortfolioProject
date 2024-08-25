@@ -41,47 +41,6 @@ export default function Blog({ blogData: t }: { blogData: BlogData }) {
             <Typography gutterBottom align="left" component="h2" variant="h4">
               {t.featuredArticle}
             </Typography>
-            <Card component="article" elevation={8} sx={{ mb: 2 }}>
-              <CardActionArea
-                disableRipple
-                component="a"
-                href={blogPosts.featuredPost.link}
-                rel="noopener"
-                target="_blank"
-              >
-                <Image
-                  alt={blogPosts.featuredPost.title}
-                  blurDataURL={getDataUrlWithShimmerEffect(500, 300)}
-                  height={300}
-                  layout="responsive"
-                  objectFit="cover"
-                  placeholder="blur"
-                  src={blogPosts.featuredPost.mediaSrc}
-                  width={500}
-                />
-                <CardContent>
-                  <Typography
-                    color="textSecondary"
-                    component="p"
-                    variant="body2"
-                  >
-                    {`#${blogPosts.featuredPost.category}`}
-                  </Typography>
-
-                  <Typography gutterBottom component="h2" variant="h5">
-                    {blogPosts.featuredPost.title}
-                  </Typography>
-                  <Typography
-                    color="textSecondary"
-                    component="p"
-                    variant="body2"
-                  >
-                    {blogPosts.featuredPost.description}
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
-            </Card>
-
             <Button
               fullWidth
               href="https://www.freecodecamp.org/espanol/news/author/kelvin/"

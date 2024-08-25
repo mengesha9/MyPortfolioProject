@@ -1,14 +1,4 @@
 const blogs = {
-  featuredPost: {
-    title: 'Aprende Next.js desde Cero',
-    category: 'NEXTJS',
-    link: 'https://www.freecodecamp.org/espanol/news/aprende-next-js-desde-cero/',
-    mediaSrc:
-      'https://www.freecodecamp.org/espanol/news/content/images/2021/01/next-js-logo1.png',
-    description: `Next.js es un framework de JavaScript que nos permite crear fácilmente sitios web de React listos para salir a producción.
-
-    En este artículo profundizaremos en la documentación oficial, desglosando los conceptos básicos, funciones y particularidades de Next.js.`,
-  },
   recentPosts: [
     {
       title: 'Cómo construir una PWA desde cero con HTML, CSS y JavaScript',
