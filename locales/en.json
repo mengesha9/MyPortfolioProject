@@ -27,6 +27,11 @@
     "resumeLink": "/resume/resume-en.pdf",
     "skillsTitle": "Skills"
   },
+  "testimonialData": {
+    "featuredTestimonial": "Here is a featured testimonial",
+    "mostRecent": "Here is the most recent testimonial",
+    "button": "Read More"
+  },
   "portfolioData": {
     "portfolioTitle": "Portfolio",
     "projects": [

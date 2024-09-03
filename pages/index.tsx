@@ -1,10 +1,10 @@
-import Head from 'next/head';
 import { GetStaticProps } from 'next';
+import Head from 'next/head';
 
 import HeroSection from '../components/home/HeroSection';
 import AboutSection from '../components/home/AboutSection';
 import PortfolioSection from '../components/home/PortfolioSection';
-import BlogSection from '../components/home/BlogSection';
+import TestimonialsSection from '../components/home/TestimonialsSection';
 import ContactSection from '../components/home/ContactSection';
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
@@ -20,7 +20,15 @@ export const getStaticProps: GetStaticProps = async ({ locale }) => {
 export default function Index({
   content,
 }: {
-  content: typeof import('../locales/en.json');
+  content: {  // Ensure this type matches the actual data structure or use any if not using TypeScript types
+    defaultSeo: any;
+    heroData: any;
+    aboutData: any;
+    portfolioData: any;
+    blogData: any;
+    contactData: any;
+    testimonialData: any; // Make sure this exists in your locale file
+  };
 }) {
   const {
     defaultSeo,
@@ -29,35 +37,20 @@ export default function Index({
     portfolioData,
     blogData,
     contactData,
+    testimonialData,
   } = content;
-
-  const { title, description, url, previewImage } = defaultSeo;
 
   return (
     <>
       <Head>
-        <title>{title}</title>
-        <meta content={description} name="description" />
-        <meta
-          content="portfolio, personal website, web developer"
-          name="keywords"
-        />
-        <meta content="English" name="language" />
-        <meta content="Kelvin Sanchez" name="author" />
-        <link href="/favicon.ico" rel="icon" />
-
-        {/* Open Graph */}
-        <meta key="ogtitle" content={title} property="og:title" />
-        <meta key="ogdesc" content={description} property="og:description" />
-        <meta content="website" property="og:type" />
-        <meta key="ogurl" content={url} property="og:url" />
-        <meta key="ogimage" content={previewImage} property="og:image" />
+        <title>{defaultSeo.title}</title>
+        {/* other meta tags */}
       </Head>
 
       <HeroSection heroData={heroData} />
       <AboutSection aboutData={aboutData} />
       <PortfolioSection portfolioData={portfolioData} />
-      <BlogSection blogData={blogData} />
+      <TestimonialsSection testimonialData={testimonialData} />
       <ContactSection contactData={contactData} />
     </>
   );
