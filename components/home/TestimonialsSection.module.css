@@ -1,0 +1,37 @@
+.swiperSlide {
+  transition: transform 0.3s ease-in-out;
+  opacity: 0.6; /* Slight transparency for non-active slides */
+  transform: scale(0.8); /* Scale down non-active slides */
+}
+
+.swiperSlideActive {
+  opacity: 1; /* Fully visible active slide */
+  transform: scale(1.1); /* Make active slide larger */
+  z-index: 1; /* Bring active slide to the front */
+}
+
+.paginationBullet {
+  background-color: #ccc; /* Light grey pagination */
+  width: 10px;
+  height: 10px;
+  margin: 0 10px;
+  border-radius: 50%;
+}
+
+.arrowContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  font-size: 2rem;
+  color: #666; /* Light grey arrows */
+}
+
+.prev:hover,
+.next:hover {
+  color: #333; /* Darker grey when hovered */
+}

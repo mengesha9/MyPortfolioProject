@@ -87,7 +87,7 @@ export default function ElevateAppBar() {
                 variant="button"
               >
                 <Typography color="primary" variant="h3">
-                  K
+                  F
                 </Typography>
               </Link>
 

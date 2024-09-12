@@ -1,67 +1,75 @@
-// TestimonialsSection.tsx
-import Box from '@mui/material/Box';
-import Container from '@mui/material/Container';
-import Grid from '@mui/material/Grid';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-import ShortCenteredDivider from '../ui/ShortCenteredDivider';
+import dynamic from 'next/dynamic';
+import 'swiper/css'; // Import basic Swiper styles
+import 'swiper/css/pagination'; // Import Swiper pagination styles
+import styles from './TestimonialsSection.module.css'; // Import your custom styles
+import { Box, Typography } from '@mui/material';
 import TestimonialCard from './TestimonialCard';
-import testimonials from './constants/testimonials';  // Assuming this is the correct path
+import { Pagination, Navigation } from 'swiper/modules'; // Swiper modules
 
-interface TestimonialData {
-  featuredTestimonial: string;
-  mostRecent: string;
-  button: string;
+// Dynamically import Swiper components to avoid SSR issues
+const Swiper = dynamic(() => import('swiper/react').then((mod) => mod.Swiper), {
+  ssr: false,
+});
+const SwiperSlide = dynamic(() => import('swiper/react').then((mod) => mod.SwiperSlide), {
+  ssr: false,
+});
+
+interface TestimonialsSectionProps {
+  testimonialData: any[];
 }
 
-export default function Testimonials({ testimonialData: t }: { testimonialData: TestimonialData }) {
+const TestimonialsSection = ({ testimonialData }: TestimonialsSectionProps) => {
   return (
-    <Box component="section" id="testimonials" sx={{ pb: 8, pt: 10, bgcolor: (theme) => theme.palette.grey[900] }}>
-      <Container>
-        <Typography gutterBottom align="center" component="h2" variant="h3">Testimonials</Typography>
-        <ShortCenteredDivider sx={{ mb: 4 }} />
-        <Grid container spacing={4}>
-          <Grid item md={5} xs={12}>
-            <Typography gutterBottom align="left" component="h2" variant="h4">{t.featuredTestimonial}</Typography>
-            <Button
-              fullWidth
-              href="https://link-to-featured-testimonial.com"
-              rel="noopener"
-              size="large"
-              sx={{ display: { xs: 'none', md: 'flex' } }}
-              target="_blank"
-              variant="contained"
-            >
-              {t.button}
-            </Button>
-          </Grid>
-          <Grid item md={7} xs={12}>
-            <Typography gutterBottom align="right" component="h2" variant="h4">{t.mostRecent}</Typography>
-            {testimonials.map((testimonial) => (
-              <TestimonialCard
-                key={testimonial.title}
-                title={testimonial.title}
-                quote={testimonial.quote}
-                author={testimonial.author}
-                date={testimonial.date}
-                link={testimonial.link}
-                mediaSrc={testimonial.mediaSrc}
-              />
-            ))}
-            <Button
-              fullWidth
-              href="https://link-to-more-testimonials.com"
-              rel="noopener"
-              size="large"
-              sx={{ display: { md: 'none' } }}
-              target="_blank"
-              variant="contained"
-            >
-              {t.button}
-            </Button>
-          </Grid>
-        </Grid>
-      </Container>
+    <Box sx={{ py: 20, bgcolor: 'background.paper' }}>
+      <Typography variant="h4" align="center" gutterBottom>
+        Testimonials
+      </Typography>
+      <Swiper
+        modules={[Pagination, Navigation]}
+        spaceBetween={100}
+        slidesPerView={1} // Show 3 slides in a row
+        centeredSlides={true}
+        loop={true}
+        pagination={{
+          clickable: true,
+          renderBullet: (index: number, className: string) => {
+            return `<span class="${className} ${styles.paginationBullet}"></span>`;
+          },
+        }}
+        navigation={{
+          nextEl: `.${styles.next}`,
+          prevEl: `.${styles.prev}`,
+        }}
+        onSlideChange={(swiper: any) => {
+          if (swiper && swiper.slides && swiper.slides.length > 0) {
+            swiper.slides.forEach((slide: any) => {
+              if (slide && slide.classList) {
+                slide.classList.remove(styles.swiperSlideActive);
+              }
+            });
+            if (swiper.slides[swiper.activeIndex] && swiper.slides[swiper.activeIndex].classList) {
+              swiper.slides[swiper.activeIndex].classList.add(styles.swiperSlideActive);
+            }
+          }
+        }}
+        onSwiper={(swiper: any) => {
+          if (swiper.slides && swiper.slides[swiper.activeIndex]) {
+            swiper.slides[swiper.activeIndex].classList.add(styles.swiperSlideActive);
+          }
+        }}
+      >
+        {testimonialData.map((testimonial, index) => (
+          <SwiperSlide key={index} className={styles.swiperSlide}>
+            <TestimonialCard {...testimonial} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+      <div className={styles.arrowContainer}>
+        <div className={styles.prev}>❮</div>
+        <div className={styles.next}>❯</div>
+      </div>
     </Box>
   );
-}
+};
+
+export default TestimonialsSection;

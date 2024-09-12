@@ -1,11 +1,17 @@
-// components/home/constants/testimonials.ts
-interface Testimonial {
-    title: string;
-    quote: string;
-    author: string;
-    date: string;
-    link: string;
-    mediaSrc: string;
+export interface SocialMedia {
+  platform: string;
+  url: string;
+  icon: string;
+}
+
+export interface Testimonial {
+  title: string;
+  quote: string;
+  author: string;
+  date: string;
+  link: string;
+  mediaSrc: string;
+  socialMedia: SocialMedia[];
 }
 
 const testimonials: Testimonial[] = [
@@ -15,16 +21,13 @@ const testimonials: Testimonial[] = [
     author: "Jane Doe",
     date: "March 15, 2022",
     link: "https://www.example.com/full-testimonial",
-    mediaSrc: "/public/projectMedia/testimonial1.jpg"
+    mediaSrc: "/public/projectMedia/testimonial1.jpg",
+    socialMedia: [
+      { platform: "Twitter", url: "https://twitter.com/janedoe", icon: "/public/icons/twitter.png" },
+      { platform: "LinkedIn", url: "https://linkedin.com/in/janedoe", icon: "/public/icons/linkedin.png" }
+    ]
   },
-  {
-    title: "Professional and Reliable",
-    quote: "A reliable partner in our continuous journey.",
-    author: "John Smith",
-    date: "July 20, 2022",
-    link: "https://www.example.com/full-testimonial",
-    mediaSrc: "/public/projectMedia/testimonial2.jpg"
-  }
+  // Add more testimonials
 ];
 
 export default testimonials;
