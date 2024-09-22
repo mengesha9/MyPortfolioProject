@@ -1,6 +1,4 @@
 import {
-  SiHtml5,
-  SiCss3,
   SiJavascript,
   SiGit,
   SiNodedotjs,
@@ -15,16 +13,29 @@ import {
   SiFirebase,
   SiTailwindcss,
   SiTypescript,
+  SiDotnet,
+  SiCsharp,
+  SiPython,
+  SiDjango
+
 } from 'react-icons/si';
 
 const skillLogos = [
   {
-    icon: <SiHtml5 title="Html5" />,
-    label: 'Html5',
+    icon: <SiCsharp title="C#" />,
+    label: 'C#',
   },
   {
-    icon: <SiCss3 title="CSS3" />,
-    label: 'CSS3',
+    icon: <SiDotnet title=".NET" />,
+    label: '.NET',
+  },
+  {
+    icon: <SiPython title="Python" />,
+    label: 'Python',
+  },
+  {
+    icon: <SiDjango title="Django" />,
+    label: 'Django',
   },
   {
     icon: <SiJavascript title="JavaScript" />,
@@ -82,6 +93,7 @@ const skillLogos = [
     icon: <SiBootstrap title="Bootstrap" />,
     label: 'Bootstrap',
   },
+ 
 ];
 
 export default skillLogos;

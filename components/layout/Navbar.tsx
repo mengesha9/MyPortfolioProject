@@ -50,17 +50,17 @@ export default function ElevateAppBar() {
   const menuItems = [
     {
       link: '/#',
-      name: `${router.locale === 'en' ? 'HOME' : 'INICIO'}`,
+      name: 'HOME',
       icon: <HomeIcon />,
     },
     {
       link: '/#about',
-      name: `${router.locale === 'en' ? 'ABOUT' : 'ACERCA DE MI'}`,
+      name:  'ABOUT',
       icon: <PermIdentityIcon />,
     },
     {
       link: '/#portfolio',
-      name: `${router.locale === 'en' ? 'PORTFOLIO' : 'PORTAFOLIO'}`,
+      name: 'Portfolio',
       icon: <WorkIcon />,
     },
     {
@@ -70,7 +70,7 @@ export default function ElevateAppBar() {
     },
     {
       link: '/#contact',
-      name: `${router.locale === 'en' ? 'CONTACT' : 'CONTACTO'}`,
+      name: 'CONTACT',
       icon: <MailIcon />,
     },
   ];
@@ -87,7 +87,7 @@ export default function ElevateAppBar() {
                 variant="button"
               >
                 <Typography color="primary" variant="h3">
-                  F
+                  M
                 </Typography>
               </Link>
 
@@ -104,7 +104,7 @@ export default function ElevateAppBar() {
                 </AnimatedLink>
               ))}
 
-              <LanguageSelector />
+              {/* <LanguageSelector /> */}
 
               <IconButton
                 aria-label="Open Navigation"
@@ -114,6 +114,8 @@ export default function ElevateAppBar() {
               >
                 <MenuIcon color="secondary" fontSize="large" />
               </IconButton>
+
+
             </Toolbar>
           </Container>
         </AppBar>

@@ -23,7 +23,7 @@ export default function Footer() {
         </Fab>
 
         <Typography gutterBottom align="center" component="p" variant="h6">
-          Fetsum Abyu ©{new Date().getFullYear()}
+          Mengistu Ashebir ©{new Date().getFullYear()}
         </Typography>
       </Box>
     </Box>

@@ -24,13 +24,13 @@ export default class MyDocument extends Document {
             sizes="180x180"
           />
           <link
-            href="/favicon-32x32.png"
+            href="/https://www.canva.com/design/DAGReuyWCfI/PK0yOISfBlX0d7XtTrujKg/view?utm_content=DAGReuyWCfI&utm_campaign=share_your_design&utm_medium=link&utm_source=shareyourdesignpanel"
             rel="icon"
             sizes="32x32"
             type="image/png"
           />
           <link
-            href="/favicon-16x16.png"
+            href="/https://www.canva.com/design/DAGReuyWCfI/PK0yOISfBlX0d7XtTrujKg/view?utm_content=DAGReuyWCfI&utm_campaign=share_your_design&utm_medium=link&utm_source=shareyourdesignpanel"
             rel="icon"
             sizes="16x16"
             type="image/png"

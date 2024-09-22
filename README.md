@@ -1,10 +1,9 @@
-## View project
-
-[www.kelvinsanchez15.com](https://www.kelvinsanchez15.com)
-
 ## About the project
 
 A personal portfolio website that showcases my feature projects, technical skill stack, contact information and more about me.
+
+## How to install 
+  - npm install
 
 ## Screenshots
 

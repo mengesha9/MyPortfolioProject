@@ -62,7 +62,7 @@ export default function About({ aboutData: t }: { aboutData: AboutData }) {
 
           <Grid item md={4} xs={12}>
             <Typography gutterBottom component="h2" variant="h3">
-              {t.resumeTitle}
+              {"Resume"}
             </Typography>
             <CustomDivider />
           </Grid>
@@ -82,7 +82,7 @@ export default function About({ aboutData: t }: { aboutData: AboutData }) {
               target="_blank"
               variant="outlined"
             >
-              {t.resumeButton}
+              {"Resume"}
             </Button>
           </Grid>
 

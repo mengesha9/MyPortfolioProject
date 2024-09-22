@@ -45,7 +45,7 @@ export default function Portfolio({
     <Box component="section" id="portfolio" sx={{ pb: 8, pt: 10 }}>
       <Container>
         <Typography gutterBottom align="center" component="h2" variant="h3">
-          {t.portfolioTitle}
+          {"My Projects"}
         </Typography>
 
         <ShortCenteredDivider sx={{ mb: 4 }} />

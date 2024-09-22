@@ -23,7 +23,7 @@ const testimonials: Testimonial[] = [
     link: "https://www.example.com/full-testimonial",
     mediaSrc: "/public/projectMedia/testimonial1.jpg",
     socialMedia: [
-      { platform: "Twitter", url: "https://twitter.com/janedoe", icon: "/public/icons/twitter.png" },
+      { platform: "X", url: "https://twitter.com/janedoe", icon: "/public/icons/x.webp" },
       { platform: "LinkedIn", url: "https://linkedin.com/in/janedoe", icon: "/public/icons/linkedin.png" }
     ]
   },

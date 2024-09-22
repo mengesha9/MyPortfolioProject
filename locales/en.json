@@ -1,13 +1,13 @@
 {
   "defaultSeo": {
-    "title": "Fetsum Abyu | Software Engineer",
-    "description": "Fetsum Abyu is a motivated and inquisitive Software Engineer with a passion for software development and problem-solving. Actively seeking job opportunities at top tech companies to further enhance skills and contribute to innovative projects and find solution to real world problems.",
+    "title": "Mengistu Ashebir | Software Engineer",
+    "description": "Mengistu Ashebir is a motivated and inquisitive Software Engineer with a passion for software development and problem-solving. Actively seeking job opportunities at top tech companies to further enhance skills and contribute to innovative projects and find solution to real world problems.",
     "url": "https://www.kelvinsanchez15.com/",
     "previewImage": "/resume/profile.png"
   },
   "heroData": {
     "greetings": "HELLO, ",
-    "introduction": "I'm Fetsum Abyu",
+    "introduction": "I'm Mengistu Ashebir",
     "role": "Software Engineer",
     "paragraph": "Passionate about coding, and making my client ideas come true.",
     "button1": "Check my work",
@@ -21,7 +21,7 @@
       "I love teamwork and good communication, always open to feedback and willing to learn new things.",
       "In my free time I like to play soccer, read a good book or play videogames."
     ],
-    "resumeTitle": "Resumé",
+    "resumeTitle": "Resume",
     "resumeParagraph": "You can check my resumé in the link below.",
     "resumeButton": "Resumé",
     "resumeLink": "/resume/resume-en.pdf",
@@ -33,7 +33,7 @@
     "button": "Read More"
   },
   "portfolioData": {
-    "portfolioTitle": "Portfolio",
+    "portfolioTitle": "My Projects",
     "projects": [
       {
         "name": "ATRONS",
@@ -47,7 +47,7 @@
           "Enhanced User Experience",
           "Award-Winning Performance"
         ],
-        "technologies": ["Node.js", "MongoDB", "Express"]
+        "technologies": ["Node.js", "MongoDB", "Express","React"]
       },
       {
         "name": "Bazar",
@@ -61,7 +61,7 @@
           "Personal Listing Assistance",
           "Product Recommendation Systems"
         ],
-        "technologies": ["Node.js", "MongoDB", "OpenAI API", "React"]
+        "technologies": ["Next.js","MongoDB", "OpenAI API", "React",".Net","C#"]
       }
     ]
   },

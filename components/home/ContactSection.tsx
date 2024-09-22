@@ -19,7 +19,7 @@ import {
 import ShortCenteredDivider from '../ui/ShortCenteredDivider';
 import Link from '../Link';
 import EmailSuccessMessage from '../EmailSuccessMessage';
-import profilePicture from '../../public/profile-picture.png';
+import profilePicture from '../../public/profile-picture.jpeg';
 
 import socialIcons from './constants/socialIcons';
 
@@ -113,7 +113,7 @@ export default function Contact({
         <Box sx={{ display: 'flex', justifyContent: 'center', my: 2 }}>
           <Avatar sx={{ width: 96, height: 96 }}>
             <Image
-              alt="Fetsum Abyu"
+              alt="Mengistu Ashebir"
               height={160}
               placeholder="blur"
               src={profilePicture}
@@ -129,7 +129,8 @@ export default function Contact({
               <Link href="/#portfolio">{t.p2}</Link>
               {t.p3}
               <Link href={t.resumeLink} rel="noopener" target="_blank">
-                {t.p4}
+                {/* {t.p4} */}
+                {"Resume"}
               </Link>
               .
             </Typography>

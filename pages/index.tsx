@@ -22,7 +22,7 @@ interface ContentProps {
 }
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
-  const response = await import(`../locales/${locale}.json`);
+  const response = await import(`../locales/en.json`);
 
   const testimonialData = [
     {
@@ -46,7 +46,7 @@ export const getStaticProps: GetStaticProps = async ({ locale }) => {
       link: "https://www.example.com/full-testimonial",
       mediaSrc: "/public/projectMedia/testimonial1.jpg",
       socialMedia: [
-        { platform: "Twitter", url: "https://twitter.com/janedoe", icon: "/public/icons/twitter.png" },
+        { platform: "Twitter", url: "https://twitter.com/janedoe", icon: "/public/x.webp" },
         { platform: "LinkedIn", url: "https://linkedin.com/in/janedoe", icon: "/public/icons/linkedin.png" }
       ]
     },
@@ -73,9 +73,11 @@ export default function Index({ content }: { content: ContentProps }) {
       </Head>
 
       <HeroSection heroData={content.heroData} />
+
       <AboutSection aboutData={content.aboutData} />
       <PortfolioSection portfolioData={content.portfolioData} />
       {/* testimonials was here!! */}
+      {/* <TestimonialsSection testimonialData={content.testimonialData} /> */}
       <ContactSection contactData={content.contactData} />
     </>
   );
