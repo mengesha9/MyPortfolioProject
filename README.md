@@ -5,9 +5,6 @@ A personal portfolio website that showcases my feature projects, technical skill
 ## How to install 
   - npm install
 
-## Screenshots
-
-![Portfolio multidevices mockup](https://user-images.githubusercontent.com/4708484/135478774-68358e78-a50c-4cc4-8e84-29874ed549ac.png)
 
 ## Core dependencies
 
